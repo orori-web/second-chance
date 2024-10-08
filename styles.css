@@ -1,0 +1,335 @@
+/* Footer Styles */
+#main-footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+#main-footer .social-media a:hover {
+    color: #6f35dc; /* Optional: changes icon color on hover */
+}
+
+footer p {
+    color: #ffff;
+    text-align: center;
+}
+
+#main-footer {
+    background-color: #19270a; /* Dark background */
+    color: white; /* White text */
+    padding: 30px; /* Padding around the footer */
+    position: relative; /* Position relative for child elements */
+    bottom: 0; /* Stick to the bottom of the page */
+    width: 100%; /* Full width */
+    margin: 0;
+}
+
+.footer-logo {
+    display: block; /* Make logo a block element */
+    margin: 0 auto; /* Center the logo */
+    max-width: 100px; /* Set a maximum width */
+}
+
+.footer-links a {
+    color: #ffff;
+}
+
+.footer-links a:hover {
+    color: #6f35dc;
+}
+
+/* Navigation Styles */
+.header {
+    background-color: #000000; /* Set the background color of the navbar */
+    color: #fff; /* Set the text color */
+    padding: 10px; /* Add some padding around the navbar */
+}
+
+.header ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to control the layout of the items */
+    align-items: center; /* Vertically align the logo and nav items */
+    justify-content: space-between; /* Push the logo to the left and the links to the right */
+}
+
+.header li {
+    margin-right: 40px; /* Add space between each navigation item */
+}
+
+.header li:last-child {
+    margin-right: 0; /* Remove margin from the last navigation item to avoid extra space */
+}
+
+.header a {
+}
+
+
+display: block; /* Make the anchor tag behave like a block-level element */
+padding: 10px 15px; /* Add padding inside the links for better spacing */
+color: #fff; /* Set the text color */
+text-decoration: none; /* Remove underline from the links */
+background-color: #000000; /* Match the background of the links with the navbar */
+border-radius: 5px; /* Slightly round the corners of the link boxes */
+transition: background-color 0.3s ease; /* Add a smooth transition for hover effects */
+
+
+.header a:hover {
+    background-color: #01312B; /* Change background color when hovering */
+}
+
+.header-logo {
+    margin-right: auto; /* Push the logo to the left by taking up available space */
+    display: flex; /* Ensure the logo is flexible and vertically aligned */
+    align-items: center; /* Vertically center the logo within the nav bar */
+}
+
+/* Top Part Styles */
+.top-part {
+    background-color: #01312B;
+    display: flex; /* Enable flexbox to align items horizontally */
+    align-items: center; /* Vertically align the items */
+    justify-content: space-between; /* Space the text and image evenly */
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffff;
+}
+
+img {
+    margin-left: 40px; /* Add space between the text and the image */
+}
+
+/* Navigation for Categories */
+.nav-2 nav a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-2 {
+    display: block;
+    width: 160px;
+    position: relative;
+    height: auto;
+    overflow: auto;
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+}
+
+/* Change the link color on hover */
+.nav-2 li a:hover {
+    background-color: #555;
+    color: white;
+}
+/* Remove default link styles */
+a {
+    text-decoration: none;  /* No underline */
+}
+
+/* General button style for all buttons */
+.stylish-btn {
+    background:#000;  /* Gradient background */
+    color: white;                  /* Text color */
+    padding: 15px 30px;            /* Padding */
+    font-size: 18px;               /* Font size */
+    font-weight: bold;             /* Bold text */
+    border: none;                  /* No borders */
+    border-radius: 50px;           /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+    cursor: pointer;               /* Hand cursor */
+    transition: all 0.3s ease-in-out;  /* Hover transition */
+}
+
+/* Hover effect */
+.stylish-btn:hover {
+    background: linear-gradient(135deg, #8D58BF, #6D5BBA);  /* Invert colors on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  /* Darker shadow */
+    transform: translateY(-3px);  /* Lift button */
+}
+
+/* Active state */
+.stylish-btn:active {
+    transform: translateY(0px);  /* Reset on click */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Lighter shadow */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative; /* Positioning relative to allow absolute positioning for the dropdown content */
+    display: inline-block; /* Make it inline with other elements */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Initially hide the dropdown content */
+    position: absolute; /* Position it absolutely within the dropdown container */
+    background-color: rgb(0, 0, 0); /* Background color */
+    min-width: 160px; /* Minimum width of the dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    z-index: 1; /* Make sure it appears above other content */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown content when hovering over the dropdown */
+}
+
+/* Pop-up background styling */
+.popup {
+    display: none;  /* Hidden by default, will be shown when triggered */
+    position: fixed;  /* Stay in place when the user scrolls */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Cover the whole screen */
+    height: 100%;  /* Full height of the screen */
+    background: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    z-index: 999;  /* Make sure it's on top of other elements */
+    overflow: auto;
+}
+
+/* Styling for the pop-up content box */
+.popup-content {
+    background-color: #fff;  /* White background for contrast */
+    padding: 30px;  /* Space inside the box */
+    border-radius: 12px;  /* Rounded corners for a smooth look */
+    width: 400px;  /* Set width for the form */
+    max-width: 90%;  /* Make it responsive by limiting to 90% of screen width on smaller devices */
+    position: relative;  /* Needed for positioning the close button */
+    text-align: center;  /* Center the text */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);  /* Shadow effect for depth */
+    animation: popup-show 0.3s ease-in-out;  /* Add a smooth entrance animation */
+}
+
+/* Keyframes for the pop-up animation */
+@keyframes popup-show {
+    from {
+        transform: scale(0.9);  /* Start slightly smaller */
+        opacity: 0;  /* Fully transparent at the start */
+    }
+    to {
+        transform: scale(1);  /* End at normal size */
+        opacity: 1;  /* Fully visible at the end */
+    }
+}
+
+/* Close button styling (the "X" to close the pop-up) */
+.close-btn {
+    position: absolute;  /* Position it relative to .popup-content */
+    top: 10px;  /* Space from the top of the box */
+    right: 15px;  /* Space from the right side */
+    font-size: 20px;  /* Larger font size */
+    color: #333;  /* Dark grey color */
+    cursor: pointer;  /* Make it look clickable */
+}
+
+/* Change color when user hovers over the close button */
+.close-btn:hover {
+    color: #c10b0b;  /* Red hover effect to indicate it's clickable */
+}
+
+/* Label styling for each form field */
+label {
+    font-weight: bold;  /* Make labels bold to stand out */
+    display: block;  /* Make labels appear on their own line */
+    margin-bottom: 8px;  /* Space between label and input field */
+}
+
+/* Styling for text inputs, dropdowns, and textareas */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;  /* Full width for uniform look */
+    padding: 10px;  /* Padding inside the fields */
+    border: 1px solid #ccc;  /* Light grey border */
+    border-radius: 5px;  /* Slightly rounded corners */
+    margin-bottom: 20px;  /* Space between form elements */
+    font-size: 16px;  /* Large and easy-to-read text */
+}
+
+/* Button styling for the submit button */
+.submit-btn {
+    background-color: #6D5BBA;  /* Purple background for the button */
+    color: white;  /* White text on the button */
+    padding: 12px 20px;  /* Padding inside the button */
+    border: none;  /* Remove default border */
+    border-radius: 25px;  /* Rounded button shape */
+    cursor: pointer;  /* Pointer cursor for interactive feedback */
+    font-size: 16px;  /* Larger text size */
+    font-weight: bold;  /* Bold text for emphasis */
+    transition: background-color 0.3s ease;  /* Smooth background color change on hover */
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+    background-color: #8D58BF;  /* Slightly lighter purple when hovered */
+}
+
+/* Styling for the image preview box */
+#imagePreview {
+    width: 100%;  /* Full width of the form */
+    height: 200px;  /* Fixed height for the image preview area */
+    background-color: #f4f4f4;  /* Light grey background */
+    border: 1px solid #ddd;  /* Light border around the preview box */
+    display: flex;  /* Flexbox for centering image */
+    justify-content: center;  /* Horizontally center the image */
+    align-items: center;  /* Vertically center the image */
+    margin-bottom: 20px;  /* Space between the preview box and the next element */
+    border-radius: 8px;  /* Slightly rounded corners */
+    overflow: hidden;  /* Hide any overflow if the image is larger than the box */
+}
+
+/* Styling for the image inside the preview box */
+#imagePreview img {
+    width: auto;  /* Make the width auto to maintain the aspect ratio */
+    height: 100%;  /* Set the height to fit the box */
+    max-width: 100%;  /* Ensure the image doesn't stretch beyond the box */
+}
+
+/* Increase textarea height */
+textarea {
+    height: 80px;  /* Set a bigger height for the description field */
+}
+
+
+button[type="submit"] {
+    background-color: #036734; /* Orange background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+button[type="submit"]:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* White overlay */
+    top: 0;
+    left: -100%; /* Start off-screen */
+    transition: left 0.3s; /* Transition effect */
+}
+
+button[type="submit"]:hover:before {
+    left: 0; /* Slide in effect */
+}
